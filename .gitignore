@@ -1,0 +1,8 @@
+# Ключи, образец и списки пользователей — личные данные, не публиковать
+names.txt
+*.key
+keys-*.txt
+template.json
+awg-clients/
+awg-backup/
+*.conf
