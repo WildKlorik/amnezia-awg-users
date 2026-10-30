@@ -238,8 +238,8 @@ def cmd_add(args):
     os.makedirs(CLIENTS_DIR, mode=0o700, exist_ok=True)
     out = os.path.join(CLIENTS_DIR, datetime.now().strftime("keys-%Y%m%d-%H%M%S.txt"))
     with open(out, "w", encoding="utf-8") as f:
-        for n, k in results:
-            f.write(f"{n}: {k}\n")
+        for _, k in results:          # только ключи, в том же порядке, что и имена в списке
+            f.write(f"{k}\n")
     os.chmod(out, 0o600)
     print()
     for n, k in results:
