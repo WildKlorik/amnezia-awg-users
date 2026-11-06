@@ -24,6 +24,17 @@ vasya: vpn://AAAB...
 
 ```
 scp awg-users.py root@IP_СЕРВЕРА:/root/
+```
+
+Или есть уже файл с юзерами:
+
+```
+scp awg-users.py names.txt root@IP_СЕРВЕРА:/root/
+```
+
+Зайти на сервер:
+
+```
 ssh root@IP_СЕРВЕРА
 ```
 
